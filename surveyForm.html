@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <title>Survey Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="surveyForm.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+<body>
+  <form id="survey-form">
+    <div class="container">
+      <div class="surveyForm">
+        <header>
+          <h1 id="title">Survey Form</h1>
+        </header>
+      </div>
+    <div class="description">
+      <p id="description">Please complete our Food Survey</p>
+    </div>
+     <div class="box">
+    </div>
+      <div class="box">
+        <div class="labels">
+          <label id="name-label" for="name">First Name: </label>
+        </div>
+           <div class="rightTab">
+             <input type="text" name="name" id="name" class="input-field" placeholder="First Name" pattern="[A-Za-z]{3}" autofocus required>
+           </div>
+        <div class="labels">
+          <label id="email-label" for="email">E-mail:</label>
+        </div>
+          <div class="rightTab">
+            <input type="email" name="email" id="email" class="input-field" placeholder="E-mail Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+          </div>
+        <div class="labels">
+          <label id="number-label" for="number">Age:</label>
+        </div>
+          <div class="rightTab">
+            <input type="number" name="age" id="number" class="input-field" placeholder="Age" min="1" max="129" pattern="[0-9]+" required>
+          </div>
+      </div>
+      <div class="box">
+        <div class="labels">
+          <label for="favFood">What is your favorite type of food:</label>
+        </div>
+          <div class="rightTab">
+            <select class="dropdown" id="dropdown">
+             <option value="chinese">Chinese</option>
+             <option value="mexican">Mexican</option>
+             <option value="italian">Italian</option>
+             <option value="thai">Thai</option>
+             <option value="indian">Indian</option>
+             <option value="other">Other</option>
+            </select>
+          </div>
+      </div>
+    <div class="box">
+      <div class="labels">
+        <label for="spiceLevel">What spice level do you prefer:</label>
+      </div>
+        <div class="radioButton">
+          <label class="radio"><input name="radio-buttons" value="mild"  type="radio" class="spiceLevel">Mild</label>
+          <label class="radio"><input name="radio-buttons" value="medium"  type="radio" class="userRatings">Medium</label>
+          <label class="radio"><input name="radio-buttons" value="hot"  type="radio" class="spiceLevel">Hot</label>
+          <label class="radio"><input name="radio-buttons" value="burn my taste buds"  type="radio" class="spiceLevel">Burn My Tastebuds</label>
+        </div>
+    </div>
+    <div class="box">
+      <div class="labels">
+        <label for="drink">Drink preference with meals:</label>
+      </div>
+        <div class="checkBox">
+          <input type="checkbox" name="drink1" value="hot">Hot
+          <input type="checkbox" name="drink2" value="cold">Cold
+          <input type="checkbox" name="drink3" value="both">Both
+        </div>
+    </div>
+      <div class="comments">
+         <div class="labels">
+          <label for="comments">Any Comments or Suggestions:</label>
+      </div>
+        <div class="rightTab">
+          <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+      </div>
+      <div class="submitBox">
+         <button id="submit" type="submit">Submit</button>
+      </div>
+    </div><!--End Container-->
+  </form>
+</body>
+</html>

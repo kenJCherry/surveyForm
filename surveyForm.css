@@ -1,0 +1,70 @@
+/*
+body{
+  background-image: url("https://pune365.com/wp-content/uploads/2017/02/30287438_l.jpg");
+  background-postion: center;
+}*/
+html body {
+  background-color: gray;
+}
+
+.container {
+  background: rgb(253, 253, 241);
+  padding-right: 20px;
+}
+
+#survey-form {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+p, .surveyForm {
+  text-align:  center;
+
+}
+
+.spiceLevel {
+  font-size: 15px;
+}
+
+.labels {
+  font-size: 20px;
+  font-weight: 900px;
+  margin-right: 15px;
+  margin-left: 15px;
+ }
+
+.input-field {
+  font-size: 20px;
+
+}
+
+.dropdown {
+  font-size: 20px;
+}
+
+.radioButton, .checkBox {
+  font-size: 20px;
+    margin-left: 1em;
+}
+
+.comments{
+  display: flex;
+}
+
+.submitBox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+#submit {
+  font-size: 20px;
+  margin-top: 20px;
+
+}
